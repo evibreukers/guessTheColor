@@ -1,0 +1,98 @@
+/* GENERAL */
+
+#mainWrapper {
+    width: 500px;
+    height: auto;
+    background-color: darkcyan;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#optionBox {
+    display: flex;
+    width: fit-content;
+    margin: 30px auto 20px auto;
+    background-color: rgb(94, 187, 187);
+    font-family: 'Fredoka One', cursive;
+    color: rgb(48, 104, 104);
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.option {
+    margin: 5px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#rgbOp, #hardOp {
+    background-color: beige;
+}
+
+#colorWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.colorBox {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+#color1 {
+    background-color: burlywood;
+}
+
+#color2 {
+    background-color: rgb(226, 151, 52);
+}
+
+#color3 {
+    background-color: rgb(135, 197, 222);
+}
+
+#color4 {
+    background-color: rgb(135, 155, 222);
+}
+
+#color5 {
+    background-color: rgb(73, 16, 66);
+}
+
+#color6 {
+    background-color: rgb(135, 222, 193);
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    margin-bottom: -20px;
+}
+
+h2 {    
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+#hexShow {
+    display: none;
+}
+
+#button {
+    border: none;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(88, 179, 179);
+    outline: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
