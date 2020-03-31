@@ -20,7 +20,7 @@ CSS, HTML, JavaScript
     
 ## 🚀 Preview
 
-For a preview screen..see images in 'preview' folder
+https://evibreukers.github.io/guessTheColor/
 
 ENJOY!
 
