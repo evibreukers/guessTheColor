@@ -12,7 +12,7 @@ const random = () => {
 const rgbToHex = (rgb)=> { 
         var hex = Number(rgb).toString(16);
         if (hex.length < 2) {
-            hex = "0" + hex;
+            hex = '0' + hex;
         }
     return hex;
 }
@@ -20,7 +20,7 @@ const rgbToHex = (rgb)=> {
 // FUNCTION: pick a new random color
 const pickColor = () => {
     let miniArray = []
-    result.innerHTML = ""
+    result.innerHTML = ''
 
     const selectColor = document.querySelectorAll('.colorBox')
     Array.from(selectColor).forEach(function(item){
@@ -34,17 +34,17 @@ const pickColor = () => {
 
         item.style.backgroundColor = hexCode
 
-        item.setAttribute("data-rgb", rgbCode)
-        item.setAttribute("data-hex", hexCode)
+        item.setAttribute('data-rgb', rgbCode)
+        item.setAttribute('data-hex', hexCode)
 
         miniArray.push(rgbCode)
     })
 
     let randomHex = Math.floor(Math.random() * miniArray.length + 1)
     console.log(randomHex)
-    let randomBox = "color" + randomHex
-    let getRGB = document.getElementById(randomBox).getAttribute("data-rgb")
-    let getHex = document.getElementById(randomBox).getAttribute("data-hex")
+    let randomBox = 'color' + randomHex
+    let getRGB = document.getElementById(randomBox).getAttribute('data-rgb')
+    let getHex = document.getElementById(randomBox).getAttribute('data-hex')
 
     document.querySelector('#rgbShow').innerHTML = getRGB
     document.querySelector('#hexShow').innerHTML = getHex
@@ -54,7 +54,7 @@ const pickColor = () => {
 document.querySelector('#button').addEventListener('click', () => {
     const colorBoxes = document.querySelectorAll('.colorBox')
     colorBoxes.forEach(function(colorBox){
-        colorBox.style.border = "none"
+        colorBox.style.border = 'none'
     })
     pickColor()
 })
@@ -63,20 +63,20 @@ document.querySelector('#button').addEventListener('click', () => {
 const clickColorBox = () => {
     const colorBoxes = document.querySelectorAll('.colorBox')
     colorBoxes.forEach(function(colorBox){
-        colorBox.addEventListener("click", function(){
+        colorBox.addEventListener('click', function(){
             
             colorBoxes.forEach(function(colorBox){
-                colorBox.style.border = "none"
+                colorBox.style.border = 'none'
             })
 
-            colorBox.style.border = "solid 2px white"
+            colorBox.style.border = 'solid 2px white'
             const getColor = colorBox.style.backgroundColor 
             const pickedColor = document.querySelector('#rgbShow').innerHTML
 
             if(getColor === pickedColor){
-                result.innerHTML = "YOU WON"
+                result.innerHTML = 'YOU WON'
             } else {
-                result.innerHTML = "WRONG COLOR"
+                result.innerHTML = 'WRONG COLOR'
             }
         })
 
