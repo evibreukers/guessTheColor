@@ -20,7 +20,10 @@ CSS, HTML, JavaScript
     
 ## 🚀 Preview
 
-https://evibreukers.github.io/guessTheColor/
+Have fun guessing...
+https://guessthecolorgame.netlify.app
+
+![alt text](preview.png)
 
 ENJOY!
 
